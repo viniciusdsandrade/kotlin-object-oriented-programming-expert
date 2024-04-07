@@ -1,3 +1,5 @@
+package poo
+
 import java.text.Normalizer
 import java.util.*
 
@@ -47,7 +49,6 @@ fun main() {
     if (isPalindrome(string)) println("A string é um palíndromo")
     else println("A string não é um palíndromo")
 
-
     val phrases = listOf(
         "arara",
         "Osso",
@@ -58,13 +59,11 @@ fun main() {
         "Essa frase não é um palíndromo"
     )
 
-    for (phrase in phrases) {
+    for (phrase in phrases)
         println("\"$phrase\" é um palíndromo? ${isPalindrome(phrase)}")
-    }
 
     println()
-    for (phrase in phrases) {
-        println("\"$phrase\" é um palíndromo? ${isPalindrome2(phrase)}")
-    }
 
+    for (phrase in phrases)
+        println("\"$phrase\" é um palíndromo? ${isPalindrome2(phrase)}")
 }

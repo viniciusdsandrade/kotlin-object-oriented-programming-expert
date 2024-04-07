@@ -1,3 +1,5 @@
+package poo
+
 import kotlin.math.abs
 
 fun isPrime(n: Int): Boolean {
@@ -21,7 +23,7 @@ fun sumDigits(n: Int): Int {
     var number = n
     while (number != 0) {
         sum += number % 10
-        number /= 10
+        number = number / 10
     }
     return sum
 }
@@ -56,9 +58,10 @@ fun divisors(n: Int): List<Int> {
     }
     return divisors
 }
-fun printVector(v: List<Int>){
+
+fun printVector(v: List<Int>) {
     print("[")
-    for (i in v){
+    for (i in v) {
         if (i == v.last()) print("$i")
         else print("$i, ")
     }
@@ -66,7 +69,7 @@ fun printVector(v: List<Int>){
 }
 
 
-fun main(){
+fun main() {
 
     println("Digite um número: ")
     val number = readln().toInt()
@@ -77,6 +80,7 @@ fun main(){
     println("Quantidade de dígitos: ${quantityDigits(number)}")
     println("Soma dos dígitos: ${sumDigits(number)}")
     println("Número invertido: ${reverseNumber(number)}")
+
     if (isPalindrome(number)) println("$number é palíndromo")
     else println("$number não é palíndromo")
 
@@ -84,10 +88,4 @@ fun main(){
     println("Divisores: ${divisors(number)}")
 
     printVector(divisors(number))
-
 }
-
-
-
-
-
