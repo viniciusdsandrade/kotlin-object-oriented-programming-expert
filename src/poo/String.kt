@@ -39,7 +39,77 @@ fun isPalindrome2(s: String): Boolean {
     return lowerCase == lowerCase.reversed()
 }
 
+fun removeSpace(s: String): String {
+
+    val res = StringBuilder()
+
+    for (c in s)
+        if (c != ' ')
+            res.append(c)
+
+    return res.toString()
+}
+
+fun removeExtraSpaces(s: String): String {
+
+    val result = StringBuilder()
+    var lastChar = ' '
+
+    for (c in s) {
+        // Caso o caractere atual não seja um espaço ou o último caractere não, seja um espaço
+        // então adicionamos o caractere atual ao resultado
+        if (c != ' ' || lastChar != ' ') {
+            result.append(c)
+            lastChar = c
+        }
+    }
+
+    return result.toString()
+}
+
+
+fun isAnagram(s1: String, s2: String): Boolean {
+
+    // Quero uma estrutura de dados que não deixe eu adicionar elementos repetidos
+    val set1 = mutableSetOf<Char>()
+    val set2 = mutableSetOf<Char>()
+
+    for (c in s1)
+        if (c != ' ')
+            set1.add(c.lowercaseChar())
+
+    for (c in s2)
+        if (c != ' ')
+            set2.add(c.lowercaseChar())
+
+    return set1 == set2
+}
+
 fun main() {
+
+    // Definição de Anagrama: Anagrama é uma palavra ou frase formada pela transposição das letras de outra palavra, ou frase.
+    // Exemplo: "roma", "amor", "mora", "oram", "ramo" são anagramas
+    val s1 = "roma"
+    val s2 = "amor"
+    val s3 = "mora"
+    val s4 = "oram"
+    val s5 = "ramo"
+
+    println("As strings $s1 e $s2 são anagramas? ${isAnagram(s1, s2)}")
+    println("As strings $s1 e $s3 são anagramas? ${isAnagram(s1, s3)}")
+    println("As strings $s1 e $s4 são anagramas? ${isAnagram(s1, s4)}")
+    println("As strings $s1 e $s5 são anagramas? ${isAnagram(s1, s5)}")
+
+
+
+    print("Digite uma string: ")
+    val s = readln()
+
+    println("A string sem espaços é: ${removeSpace(s)}")
+    println("A string sem espaços extras é: ${removeExtraSpaces(s)}")
+
+
+
     print("Digite uma string: ")
     val string = readln()
     println("A string invertida é: ${reverseString(string)}")
