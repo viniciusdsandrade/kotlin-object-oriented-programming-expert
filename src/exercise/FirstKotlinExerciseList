@@ -1,0 +1,28 @@
+    1 - Tendo como entrada de dados a altura e o sexo de uma pessoa, construa um algoritmo que calcule o peso ideal, utilizando as seguintes fórmulas: Homens: (72.7 * h) – 58    Mulheres: (62.1 * h) - 44.7
+    2 - Crie um algoritmo que leia quatro valores digitados pelo usuário: n, a, b, c. a) Se n = 1 imprimir os três valores a, b, c em ordem crescente.  b) Se n = 2 escrever os três valores a, b, c em ordem decrescente.  c) Se n = 3 escrever os três valores a, b, c de forma que o maior fique no meio
+    3 - Um posto está vendendo combustíveis com a seguinte tabela de descontos: álcool: até 20 litros, desconto de 3% por litro e acima de 20 litros, desconto de 5% por litro;  Gasolina: até 20 litros, desconto de 4% por litro e acima de 20 litros, desconto de 6% por litro. Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustível (A-álcool, G-gasolina) e imprima o valor a ser pago pelo cliente. Considere que o preço do litro da gasolina é R$ 5,39 e o preço do litro do álcool é R$ 3,39.
+    4 - Escreva um algoritmo para ler uma temperatura em graus Celsius, calcular e escrever o valor correspondente em graus Fahrenheit Celsius (baseado na fórmula abaixo): F = C*1.8+32
+    5 - Faça um algoritmo que leia três notas de um aluno, calcule e escreva a média final deste aluno. Considerar que a média é ponderada e que o peso das notas é 2, 3 e 5. Fórmula para o cálculo da média final é: mediafinal = (n1*2 + n2*3 + n3*5)/10
+    6 - A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%. Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas (considere que o mês possua 4 semanas exatas).
+    7 - Faça um algoritmo para ler: número da conta do cliente, saldo, débito e crédito. Após, calcular e escrever o saldo atual (saldo atual = saldo - débito + crédito). Também testar se saldo atual for maior ou igual a zero escrever a mensagem 'Saldo Positivo', senão escrever a mensagem 'Saldo Negativo'.
+    8 - O proprietário da empresa ABC LTDA precisa de um software para calcular o novo salário que seus funcionários irão receber a partir do mês que vem. Sabendo que o aumento de salário para todos os funcionários será de 25%, faça um programa que lê o valor do salário atual do funcionário e informa o seu novo salário acrescido de 25%.
+    9 - Crie um programa que lê o ano de nascimento de uma pessoa e o ano atual. Calcule e mostre qual é: a idade da pessoa em anos, a idade da pessoa em meses, a idade da pessoa em dias e a idade da pessoa em semanas.
+    10 - Elaborar um programa que calcule e apresente o valor do volume de uma caixa retangular, utilizando a fórmula VOLUME <- COMPRIMENTO * LARGURA * ALTURA.
+
+Exercícios de Laço de Repetição
+
+    11. Faça um programa em C que mostre a tabuada de qualquer número escolhido pelo usuário (considerar tabuada do número 1 ao 10).
+    12. A prefeitura de uma cidade fez uma pesquisa com 200 pessoas, coletando dados sobre o salário e o número de filhos. A prefeitura deseja saber: • A média do salário dessas pessoas • A média do número de filhos • O maior salário
+    13. A série de Fibonacci é formada pela seguinte sequência: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, etc. Escreva um algoritmo que gere a série de Fibonacci até o vigésimo termo.
+
+Exercícios de Funções
+
+    14. Faça um programa em C que calcule a média de um aluno. Utilize uma função média: A própria função deve apresentar a média do aluno. 
+    15. Faça um programa em C que apresente funções para as quatro operações: Somar, Subtrair, Multiplicar e Dividir.
+    16. Faça um programa que apresente função para calcular a área de uma circunferência. A função deve calcular a área e realizar o retorno para a função principal. Area = 3.14*(R*R).
+    17. aça um programa que apresente função para calcular o IMC. A função deve retornar o IMC calculado para a função principal. IMC = peso/(altura*altura);
+    18. Faça um programa para calcular salário do funcionário. A função deve retornar o salário para a função principal. Salario = (hora * valorhora)*dias;
+    19. Faça um programa que crie uma função ordena. A função deve preencher um vetor de 10 posições e apresentar os valores ordenados.
+    20. Faça um programa que calcule a média de um aluno. Usar função media passando duas notas como parâmetro.
+    21. Faça um programa que converta graus Fahrenheit  para Celsius. Usar a função Celsius recebendo o grau Fahrenheit como parâmetro. Fórmula para calculo:  C=(F-32)/1.8.
+     
